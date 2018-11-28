@@ -28,18 +28,19 @@ configurations {
     providedRuntime
 }
 
+configurations.all {
+    exclude group: 'commons-logging', module: 'commons-logging'
+}
+
 dependencies {
-//    implementation('org.springframework.boot:spring-boot-starter-data-couchbase')
-    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
-//    implementation('org.springframework.boot:spring-boot-starter-data-redis')
-    implementation('org.springframework.boot:spring-boot-starter-jdbc')
+    implementation('org.springframework.boot:spring-boot-starter-data-couchbase')
     implementation('org.springframework.boot:spring-boot-starter-web')
-//    implementation('org.springframework.session:spring-session-data-redis')
-//    implementation('org.springframework.session:spring-session-jdbc')
-    runtimeOnly('mysql:mysql-connector-java')
     compile('javax.servlet:jstl')
     compile('org.apache.tomcat.embed:tomcat-embed-jasper')
     compileOnly('org.projectlombok:lombok')
     providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+    compile('org.slf4j:slf4j-api')
+    compile('org.slf4j:jcl-over-slf4j')
+    compile('ch.qos.logback:logback-classic')
 }
