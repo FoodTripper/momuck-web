@@ -1,28 +1,32 @@
 package com.food_tripper.momuck.web.domain;
 
+import com.couchbase.client.java.repository.annotation.Field;
+import com.couchbase.client.java.repository.annotation.Id;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.data.couchbase.core.mapping.Document;
+import org.springframework.data.couchbase.core.mapping.id.GeneratedValue;
+import org.springframework.data.couchbase.core.mapping.id.GenerationStrategy;
 
-import javax.persistence.*;
 
-@Entity(name="restaurant")
+@Document
 public class Restaurant {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    @Column(name="restaurant_idx")
+    @GeneratedValue(strategy=GenerationStrategy.USE_ATTRIBUTES)
+    @Field
     @Getter @Setter
-    private Long restaurantIdx;
+    private long restaurantIdx;
 
-    @Column(name="restaurant_name")
+    @Field
     @Getter @Setter
     private String restaurantName;
 
-    @Column(name="category")
+    @Field
     @Getter @Setter
     private String category;
 
-    @Column(name="average_score")
+    @Field
     @Getter @Setter
     private Double averageScore;
 
