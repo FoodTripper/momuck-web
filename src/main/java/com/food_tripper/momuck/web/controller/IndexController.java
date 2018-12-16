@@ -2,23 +2,20 @@ package com.food_tripper.momuck.web.controller;
 
 import com.food_tripper.momuck.web.domain.Restaurant;
 import com.food_tripper.momuck.web.service.RestaurantService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class IndexController {
-
-//    @Autowired
-    private Logger logger = LoggerFactory.getLogger(this.getClass());
     @Autowired
     private RestaurantService restaurantService;
 
-    @GetMapping("/")
-    public String index(Model model) {
+    @RequestMapping(value= {"/", "/home"}, method= {RequestMethod.GET, RequestMethod.POST} )
+    public String home(Model model) {
         Restaurant dummyRestaurant = restaurantService.findById(1L);
 
         if (dummyRestaurant == null) {
@@ -27,10 +24,68 @@ public class IndexController {
             restaurantService.save(dummyRestaurant);
         }
 
-        logger.debug("index requested");
+        model.addAttribute("restaurant", dummyRestaurant);
+
+        return "/home";
+    }
+    
+    @GetMapping("/home2")
+    public String home2(Model model) {
+    	Restaurant dummyRestaurant = restaurantService.findById(1L);
+
+        if (dummyRestaurant == null) {
+            dummyRestaurant = new Restaurant("모먹상점", "일식", 3.5);
+
+            restaurantService.save(dummyRestaurant);
+        }
 
         model.addAttribute("restaurant", dummyRestaurant);
 
-        return "home";
+        return "home2";
     }
+
+    
+    @GetMapping("/index")
+    public String index(Model model) {
+   
+        return "index";
+    }
+    
+    @RequestMapping(value= "/join-login", method= {RequestMethod.GET, RequestMethod.POST})
+    public String joinLogin(Model model) {
+   
+        return "join-login";
+    }
+    
+    @RequestMapping(value= "/submit-rst", method= {RequestMethod.GET, RequestMethod.POST})
+    public String submitRst(Model model) {
+   
+        return "submit-rst";
+    }
+    
+    @GetMapping("/thema")
+    public String themaPage(Model model) {
+   
+        return "thema";
+    }
+    
+    @GetMapping("/recipe-detail")
+    public String recipeDetail(Model model) {
+   
+        return "recipe-detail";
+    }
+    
+    @GetMapping("/food-list")
+    public String foodList(Model model) {
+   
+        return "food-list";
+    }
+    
+    @GetMapping("/join")
+    public String joinPage(Model model) {
+   
+        return "join";
+    }
+ 
+   
 }
