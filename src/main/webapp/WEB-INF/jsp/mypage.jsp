@@ -72,7 +72,7 @@
 					</li>
 	
 					
-					<li class="nav-item"><a class="nav-link" href="mypage">마이페이지</a></li>
+					<li class="nav-item"><a class="nav-link" href="homepage-2">마이페이지</a></li>
 					
 					
 					<a class="nav-link" href="join-login"><img src="images/login.png" alt="로그인" width="20px"></a>
@@ -95,104 +95,27 @@
 				<div class="col-lg-4">
 					<h5>
 						<i class="fa fa-cutlery" aria-hidden="true"></i>
-						회원님을 위한 맛집
+						반갑습니다 회원님
 					</h5>
-					<div class="box clearfix">
-						<a href="recipe-detail"><img src="images/maca.jpeg" alt=""></a>
-						<h3>
-							<a href="rst-detail">언니네 오븐</a>
-						</h3>
-						<p>아기자기 귀여운 마카롱이 많은 디저트카페입니다.</p>
-					</div>
+					
 				</div>
 
-				<div class="col-lg-4">
-					<h5>
-						<i style="visibility: hidden;" class="fa fa-cutlery" aria-hidden="true"></i>
-					</h5>
-					<div class="box clearfix">
-						<a href="recipe-detail.jsp"><img src="images/fruit.jpg" alt=""></a>
-						<h3>
-							<a href="recipe-detail.jsp">피그인더가든</a>
-						</h3>
-						<p>강남역 채식주의자들을 위한 신선한 샐러드 맛집</p>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<h5>
-						<i style="visibility: hidden;" class="fa fa-cutlery" aria-hidden="true"></i> 
-					</h5>
-					<div class="box clearfix">
-						<a href="recipe-detail.jsp"><img
-							src="images/mcdeli.jpg" alt=""></a>
-						<h3>
-							<a href="recipe-detail.jsp">맘스터치</a>
-						</h3>
-						<p>엄마의 정성을 담은 수제버거&치킨 브랜드 맘스터치입니다</p>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
 
-<!-- 테마별 맛집 -->	
-  <div class="list">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h5><i class="fa fa-cutlery" aria-hidden="true"></i> 테마별 맛집</h5>
-                </div>
 
-                <div class="col-lg-4 col-sm-6">
-                    <div class="box grid recipes">
-                        <div class="by"><i class="fa fa-star" aria-hidden="true"></i> </div>
-                        <a href="recipe-detail.html"><img src="images/어반.jpg" alt=""></a>
-                        <h2><a href="recipe-detail">어반비치(Urban Beach)</a></h2>
-                        <p>아름다운 뷰와 시원한 모래사장 도심 속 해변 루프탑 칵테일 바</p>
-                        <div class="tag">
-                            <a href="#">분위기</a>
-                            <a href="#">루프탑</a>
-                            <a href="#">홍대</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-6">
-                    <div class="box grid recipes">
-                        <div class="by"><i class="fa fa-star" aria-hidden="true"></i> </div>
-                        <a href="recipe-detail.html"><img src="images/bongbong.jpg" alt=""></a>
-                        <h2><a href="recipe-detail.html">끌레드 봉봉</a></h2>
-                        <p>18가지 마카롱 맛집, 주문제작 케이크</p>
-                        <div class="tag">
-                            <a href="#">캐릭터</a>
-                            <a href="#">마카롱</a>
-                            <a href="#">꼬끄</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-6">
-                    <div class="box grid recipes">
-                        <div class="by"><i class="fa fa-star" aria-hidden="true"></i> </div>
-                        <a href="recipe-detail.html"><img src="images/induck.jpg" alt=""></a>
-                        <h2><a href="recipe-detail.html">인덕원 비빔국수</a></h2>
-                        <p>새콤달콤 안양점 비빔국수, 잔치국수</p>
-                        <div class="tag">
-                            <a href="#">인덕원</a>
-                            <a href="#">비빔국수</a>
-                            <a href="#">한고은</a>
-                        </div>
-                    </div>
-                </div> 
+           
                 
-	<!-- All recommend food restaurant -->
+<!-- 찜한 음식점 -->
 <div class="row1">
 	<div class="list">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<h5>
-						<i class="fa fa-cutlery" aria-hidden="true"></i> 방문이 제일 많은 식당
+						<i class="fa fa-cutlery" aria-hidden="true"></i> 찜한 음식점
 					</h5>
 					
 					<div class="box list recipes">
@@ -200,16 +123,15 @@
 							<i class="fa fa-star" aria-hidden="true"></i> 
 						</div>
 						<a href="recipe-detail.jsp"><img
-							src="images/visit1.jpg" alt=""></a>
+							src="images/square-recipes3.jpg" alt=""></a>
 						<h2>
-							<a href="recipe-detail.jsp">더미
+							<a href="recipe-detail.jsp">Milk fruit fresh with vegetables
 							</a>
 						</h2>
-						<p >토종한우 중 최고 등급만 취급하며 최고급 식재료를 사용하여 맛은 물론 건강까지 생각하는 최고급 한우전문점</p>
-						<div class="tag" >
-							<a href="#">광화문</a> <a href="#">고기요리</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<div class="tag">
+							<a href="#">Milk</a> <a href="#">Lemon</a> <a href="#">Sayur</a>
 						</div>
-					
 					</div>
 
 					<div class="box list recipes">
@@ -217,16 +139,15 @@
 							<i class="fa fa-star" aria-hidden="true"></i> 
 						</div>
 						<a href="recipe-detail.jsp"><img
-							src="images/visit2.jpg" alt=""></a>
+							src="images/square-recipes3.jpg" alt=""></a>
 						<h2>
-							<a href="recipe-detail.jsp">아리아께
+							<a href="recipe-detail.jsp">Milk fruit fresh with vegetables
 							</a>
 						</h2>
-						<p > 일본적 감성과 모던한 감각을 동시에 표현한 일식집</p>
-						<div class="tag" >
-							<a href="#">명동</a> <a href="#">스키야키</a><a href="#">정통일식</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<div class="tag">
+							<a href="#">Milk</a> <a href="#">Lemon</a> <a href="#">Sayur</a>
 						</div>
-					
 					</div>
 
 					<div class="box list recipes">
@@ -234,30 +155,14 @@
 							<i class="fa fa-star" aria-hidden="true"></i> 
 						</div>
 						<a href="recipe-detail.jsp"><img
-							src="images/visit3.jpg" alt=""></a>
+							src="images/square-recipes3.jpg" alt=""></a>
 						<h2>
-							<a href="recipe-detail.jsp">우마텐
+							<a href="recipe-detail.jsp">Milk fruit fresh with vegetables
 							</a>
 						</h2>
-									<p >신선한 제철채소, 새우와 붕장어를 주문 동시 튀겨 만드는 일본식 튀김덮밥 전문점</p>
-						<div class="tag" >
-							<a href="#">신사</a> <a href="#">돈부리</a><a href="#">벤또</a>
-						</div>
-					
-					</div>
-
-					<div class="box list recipes">
-						<div class="by">
-							<i class="fa fa-star" aria-hidden="true"></i> 
-						</div>
-						<a href="recipe-detail.jsp"><img
-							src="images/visit4.jpg" alt=""></a>
-						<h2>
-							<a href="recipe-detail.jsp">호경전</a>
-						</h2>
-						<p>조선호텔이 직영하는 중식요리 전문점으로 정통 광둥식 요리를 선보이는 곳</p>
-						<div class="tag" >
-							<a href="#">명동</a><a href="#">호텔</a> <a href="#">중식</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<div class="tag">
+							<a href="#">Milk</a> <a href="#">Lemon</a> <a href="#">Sayur</a>
 						</div>
 					</div>
 
@@ -266,13 +171,30 @@
 							<i class="fa fa-star" aria-hidden="true"></i> 
 						</div>
 						<a href="recipe-detail.jsp"><img
-							src="images/visit5.jpg" alt=""></a>
+							src="images/square-recipes3.jpg" alt=""></a>
 						<h2>
-							<a href="recipe-detail.jsp">파씨오네</a>
+							<a href="recipe-detail.jsp">Milk fruit fresh with vegetables
+							</a>
 						</h2>
-						<p>프렌치 레스토랑 파씨오네에서는 매일 엄선된 최상의 신선한 재료로 오너쉐프의 열정을 담은 코스 요리를 만드는 곳</p>
-						<div class="tag" >
-							<a href="#">신사</a><a href="#">프랑스음식</a> <a href="#">피쉐린가이드</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<div class="tag">
+							<a href="#">Milk</a> <a href="#">Lemon</a> <a href="#">Sayur</a>
+						</div>
+					</div>
+
+					<div class="box list recipes">
+						<div class="by">
+							<i class="fa fa-star" aria-hidden="true"></i> 
+						</div>
+						<a href="recipe-detail.jsp"><img
+							src="images/square-recipes3.jpg" alt=""></a>
+						<h2>
+							<a href="recipe-detail.jsp">Milk fruit fresh with vegetables
+							</a>
+						</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<div class="tag">
+							<a href="#">Milk</a> <a href="#">Lemon</a> <a href="#">Sayur</a>
 						</div>
 					</div>
 

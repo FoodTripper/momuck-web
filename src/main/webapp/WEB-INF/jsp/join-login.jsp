@@ -28,12 +28,8 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-		<style>
-			.a{
-				margin: auto;
-			}
-			
-		</style>
+
+	<script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script>
 	<script>
     	function join(){
     		answer = confirm("더 정확한 추천을 위해 음식점도 등록해보세요!");
@@ -47,7 +43,7 @@
     		}
     	}
     	
-    	function chk() {
+/*    	function chk() {
     		f = document.form1;
     		if(!f.email.value || f.name.value.trim().length == 0) {
     			alert('이메일을 입력해주세요');
@@ -62,13 +58,19 @@
     			return false;
     		}
     		return true;
-    	} 
+    	}   */
     </script>
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
 
     </head>
 
     <body>
+      	
 
+	
         <!-- Top content -->
         <div class="top-content">
         	
@@ -108,13 +110,13 @@
 				                    </form>
 			                    </div>
 		                    </div>
-		                
+		              
+		                	
 		                	<div class="social-login">
 	                        	<h3>간편 로그인</h3>
 	                        	<div class="social-login-buttons">
-		                        	<a class="btn btn-link-1 btn-link-1-facebook" href="#">
-		                        		<i class="fa fa-facebook"></i> Facebook
-		                        	</a>
+		                        	
+		                        	<div id="naverIdLogin"></div>
 		                        	<a class="btn btn-link-1 btn-link-1-twitter" href="#">
 		                        		<i class="fa fa-twitter"></i> Twitter
 		                        	</a>
@@ -155,12 +157,12 @@
 				                    
 				                        <div class="form-group" class="a">
 				                        	<label class="sr-only" for="form-about-yourself">Taste Food</label>
-				                        	<input type="image" src="../assets/img/korea.png" alt="한식"/>
-				                        	<input type="image" src="../assets/img/western.png" alt="양식" id=""/>
-				                        	<input type="image" src="../assets/img/chinese.png" alt="중식"/><br/>
-				                        	<input type="image" src="../assets/img/japanese.png" alt="일식"/>
-				                        	<input type="image" src="../assets/img/desert.png" alt="디저트"/>
-				                        	<input type="image" src="../assets/img/bread.png" alt="일식"/>
+				                        	<input type="image" src="../assets/img/korea.png" alt="한식"  onclick="return false;" multiple/>한식
+				                        	<input type="image" src="../assets/img/western.png" alt="양식" onclick="return false;"  multiple/>양식&nbsp;&nbsp;&nbsp;
+				                        	<input type="image" src="../assets/img/chinese.png" alt="중식" onclick="return false;" multiple/>중식<br/>
+				                        	<input type="image" src="../assets/img/japanese.png" alt="일식" onclick="return false;" multiple/>일식
+				                        	<input type="image" src="../assets/img/desert.png" alt="디저트" onclick="return false;" multiple/>디저트
+				                        	<input type="image" src="../assets/img/bread.png" alt="빵" onclick="return false;"/>빵
 				                        </div>
 				                        <button type="submit" class="btn" >회원가입</button>
 				                    </form>
@@ -189,14 +191,27 @@
         	</div>
         </footer>
 
-        <!-- Javascript -->
-        <script src="assets/js/jquery-1.11.1.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
+    
         
         <!--[if lt IE 10]>
             <script src="assets/js/placeholder.js"></script>
         <![endif]-->
+        
+    <script type="text/javascript">
+       	var naverLogin = new naver.LoginWithNaverId(
+    		{
+    			clientId: "PkikBMLHbYApZzJrqgKu",
+    			callbackUrl: "http://localhost:8001/callback.jsp",
+    			isPopup: false, /* 팝업을 통한 연동처리 여부 */
+    			loginButton: {color: "green", type: 3, height: 50} /* 로그인 버튼의 타입을 지정 */
+    		}
+    	);
+    	
+    	/* 설정정보를 초기화하고 연동을 준비 */
+    	naverLogin.init();
+    </script>
+
+
 
     </body>
 
