@@ -134,7 +134,7 @@
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="태그 입력">
-                               <a href="thema2"><button type="submit" class="btn">검색 </button></a>
+                                 <a href="thema2"><button type="submit" class="btn">검색 </button></a>
                             </div>
                         </div>
                     </div>
@@ -148,9 +148,90 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h5><i class="fa fa-cutlery" aria-hidden="true"></i>&nbsp;원하는 테마를 검색해보세요!</h5>
+                    <h5><i class="fa fa-cutlery" aria-hidden="true"></i>&nbsp;검색된 테마 맛집</h5>
                 </div>
-               
+                <div class="col-lg-4 col-sm-6">
+                    <div class="box grid recipes">
+                        <div class="by"><i class="fa fa-star" aria-hidden="true"></i>  </div>
+                        <a href="#"><img src="images/view1.jpg" alt=""></a>
+                        <h2><a href="#">조셉의 커피나무</a></h2>
+                        <p>서울이 한 눈에 보이는 멋진 뷰와 동화속 분위기를 만끽할 수 있는 성북동 카페.</p>
+                        <div class="tag">
+                            <a href="#">뷰가좋은</a>
+                            <a href="#">서울카페</a>
+                            <a href="#">커피</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="box grid recipes">
+                        <div class="by"><i class="fa fa-star" aria-hidden="true"></i>  </div>
+                        <a href="#"><img src="images/view2.jpg" alt=""></a>
+                        <h2><a href="#">쌀롱 드누이</a></h2>
+                        <p>이태원이 내려다 보이는 색다른 분위기의 주점이태원이 내려다 보이는 색다른 분위기의 주점</p>
+                        <div class="tag">
+                            <a href="#">뷰가좋은</a>
+                            <a href="#">그라탕</a>
+                            <a href="#">와인</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="box grid recipes">
+                        <div class="by"><i class="fa fa-star" aria-hidden="true"></i>  </div>
+                        <a href="#"><img src="images/view3.jpg" alt=""></a>
+                        <h2><a href="#">아이오유</a></h2>
+                        <p>한강이 훤히 내려다보이는 환상적인 뷰로 유명한 레스토랑 명소</p>
+                        <div class="tag">
+                            <a href="#">뷰가좋은</a>
+                            <a href="#">한강</a>
+                            <a href="#">레스토랑</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="box grid recipes">
+                        <div class="by"><i class="fa fa-star" aria-hidden="true"></i>  </div>
+                        <a href="#"><img src=images/view4.jpg alt=""></a>
+                        <h2><a href="#">겟썸커피</a></h2>
+                        <p>석촌호수가 한 눈에 내려다보이는 잠실 롯데월드타워 카페</p>
+                        <div class="tag">
+                            <a href="#">뷰가좋은</a>
+                            <a href="#">석촌호수카페</a>
+                            <a href="#">롯데월드몰</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="box grid recipes">
+                        <div class="by"><i class="fa fa-star" aria-hidden="true"></i>  </div>
+                        <a href="#"><img src=images/view5.jpg alt=""></a>
+                        <h2><a href="#">괴르츠</a></h2>
+                        <p>아름다운 한강 뷰를 보며 기분 좋은 식사를 할 수 있는 상수동 분위기 좋은 레스토랑</p>
+                        <div class="tag">
+                            <a href="#">뷰가좋은</a>
+                            <a href="#">커플</a>
+                            <a href="#">레스토랑</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="box grid recipes">
+                        <div class="by"><i class="fa fa-star" aria-hidden="true"></i>  </div>
+                        <a href="#"><img src=images/view6.jpg alt=""></a>
+                        <h2><a href="#">디코드</a></h2>
+                        <p>남산뷰 전경이 정말 예쁜 이태원 경리단길 스테이크 맛집</p>
+                        <div class="tag">
+                            <a href="#">뷰가좋은</a>
+                            <a href="#">남산타워</a>
+                            <a href="#">스테이크</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <a href="#" class="btn btn-load">Load More</a>
+                </div>
+            </div>
         </div>
     </div>
 

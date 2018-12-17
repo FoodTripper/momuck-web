@@ -60,12 +60,12 @@
 					<li class="nav-item"><a class="nav-link" href="home">Home</a>
 					</li>
 					
-					<li class="nav-item dropdown active"><a class="nav-link" href="my-food-list"> 나만의 맛집</a>
+					<li class="nav-item dropdown active"><a class="nav-link" href="home"> 나만의 맛집</a>
 					</li>
 						
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> 맛있는 녀석들 </a>
+						aria-haspopup="true" aria-expanded="false"> TV 맛집 </a>
 						<div class="dropdown-menu">
 							<a class="dropdown-item" href="food-list" >맛있는 녀석들</a> 
 							<a class="dropdown-item" href="food-list2" >수요미식회</a>
@@ -100,7 +100,7 @@
 			<div>
 				<div >
 					<h2>
-						<i class="fa fa-quote-left" aria-hidden="true"></i> 맛있는 녀석들 맛집 <i class="fa fa-quote-right" aria-hidden="true"></i>
+						<i class="fa fa-quote-left" aria-hidden="true"></i> 회원님만의 맛집 <i class="fa fa-quote-right" aria-hidden="true"></i>
 					</h2>
 				</div>
 			</div>

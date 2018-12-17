@@ -36,7 +36,7 @@
    <!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
 		<div class="container-fluid justify-content-center">
-			<a class="navbar-brand" href="homepage-2"> MOMUCK</a>
+			<a class="navbar-brand" href="home"> MOMUCK</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
 				aria-expanded="false" aria-label="Toggle navigation">
@@ -46,43 +46,41 @@
 			<div class="collapse navbar-collapse justify-content-center"
 				id="navbarNavDropdown">
 				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="homepage-2">Home</a>
+					<li class="nav-item"><a class="nav-link" href="home">Home</a>
 					</li>
 					
-					<li class="nav-item dropdown active"><a class="nav-link" href="homepage-2"> 나만의 맛집 </a>
+					<li class="nav-item dropdown active"><a class="nav-link" href="my-food-list"> 나만의 맛집 </a>
 					</li>
 						
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false"> TV 맛집 </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="homepage-1">맛있는 녀석들</a> 
-							<a class="dropdown-item" href="homepage-2">생생정보</a>
-							<a class="dropdown-item" href="homepage-2">수요미식회</a>
-							<a class="dropdown-item" href="browse-recipes">Browse Recipes</a> 
-							<a class="dropdown-item" href="recipe-detail">Recipe Detail</a>
+							<a class="dropdown-item" href="food-list" >맛있는 녀석들</a> 
+							<a class="dropdown-item" href="food-list2" >수요미식회</a>
+							<a class="dropdown-item" href="food-list3" >전지적참견시점</a>
+							<a class="dropdown-item" href="food-list4" >3대천왕</a> 
 						</div>
 					</li>
 					
-					<li class="nav-item dropdown active">
+			<!-- 	<li class="nav-item dropdown active">
 						<a class="nav-link" href="homepage-2">공유맛집</a>
+					</li> -->
+					
+					
+					<li class="nav-item dropdown active">
+					<a class="nav-link" href="thema">테마맛집</a>
 					</li>
+	
 					
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false">
-					테마맛집
-					</a>
+					<li class="nav-item"><a class="nav-link" href="mypage">마이페이지</a></li>
 					
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="browse-recipes">테마맛집</a>
-						<a class="dropdown-item" href="typography">Typography</a> 
-						<a class="dropdown-item" href="contact.jsp">Contact</a>
-					</div></li>
 					
-					<li class="nav-item dropdown active"><a class="nav-link" href="homepage-2">마이페이지</a></li>
+					<a class="nav-link" href="join-login"><img src="images/login.png" alt="로그인" width="20px"></a>
+					
+					
 					<li class="nav-item btn-submit-recipe">
-						<a class="nav-link" href="submit-recipes">
+						<a class="nav-link" href="submit-rst">
 						<i class="fa fa-upload" aria-hidden="true"></i> 방문 음식점 등록 </a>
 					</li>				
 				</ul>

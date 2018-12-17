@@ -60,12 +60,12 @@
 					<li class="nav-item"><a class="nav-link" href="home">Home</a>
 					</li>
 					
-					<li class="nav-item dropdown active"><a class="nav-link" href="my-food-list"> 나만의 맛집</a>
+					<li class="nav-item dropdown active"><a class="nav-link" href="my-food-list"> 나만의 맛집 </a>
 					</li>
 						
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> 맛있는 녀석들 </a>
+						aria-haspopup="true" aria-expanded="false"> 전지적참견시점 </a>
 						<div class="dropdown-menu">
 							<a class="dropdown-item" href="food-list" >맛있는 녀석들</a> 
 							<a class="dropdown-item" href="food-list2" >수요미식회</a>
@@ -100,7 +100,7 @@
 			<div>
 				<div >
 					<h2>
-						<i class="fa fa-quote-left" aria-hidden="true"></i> 맛있는 녀석들 맛집 <i class="fa fa-quote-right" aria-hidden="true"></i>
+						<i class="fa fa-quote-left" aria-hidden="true"></i> 전지적참견시점 맛집 <i class="fa fa-quote-right" aria-hidden="true"></i>
 					</h2>
 				</div>
 			</div>
@@ -120,61 +120,61 @@
             
             <div class="box list recipes">
               <div class="by"><i class="fa fa-star" aria-hidden="true"></i> </div>
-              <a href="recipe-detail.html"><img src="images/foodlist.jpg" alt=""></a>
-              <h2><a href="recipe-detail.html">스시마리 </a></h2>
-              <p>오마카세 (주방장 특선) 전문 일식집입니다</p>
+              <a href="recipe-detail1"><img src="images/foodlist3.jpg" alt=""></a>
+              <h2><a href="rst-detail1">코끼리만두(이영자 김치만두)</a></h2>
+              <p>얇은 만두피에 칼칼한 김치소의 일품 김치만두</p>
               <div class="tag">
-                <a href="#">강남구</a>
-                <a href="#">신사동</a>
-                <a href="#">일식</a>
+                <a href="#">등촌동</a>
+                <a href="#">김치만두</a>
+                <a href="#">만두국</a>
               </div>
             </div>
             
             <div class="box list recipes">
               <div class="by"><i class="fa fa-star" aria-hidden="true"></i> </div>
-              <a href="recipe-detail.html"><img src="images/foodlist_2.jpg" alt=""></a>
-              <h2><a href="recipe-detail.html">호인족발</a></h2>
-              <p>양념된 매운 족발이 대표적인 가락동의 족발 맛집</p>
+              <a href="rst-detail.html"><img src="images/foodlist3_2.jpg" alt=""></a>
+              <h2><a href="recipe-detail.html">오통영 이촌점 </a></h2>
+              <p>통영의 정갈한 밥 한그릇을 이촌동에서 맛보다</p>
               <div class="tag">
-                <a href="#">송파구</a>
-                <a href="#">가락동</a>
-                <a href="#">매운족발</a>
+                <a href="#">용산구</a>
+                <a href="#">성게비빔밥</a>
+                <a href="#">매생이굴국밥</a>
               </div>
             </div>
             
             <div class="box list recipes">
               <div class="by"><i class="fa fa-star" aria-hidden="true"></i> </div>
-              <a href="recipe-detail.html"><img src="images/foodlist_3.jpg" alt=""></a>
-              <h2><a href="recipe-detail.html">펭귄마카롱</a></h2>
-              <p>아이스크림 마카롱 전문점, 맛 별로 골라먹는 재미가 있다</p>
+              <a href="recipe-detail.html"><img src="images/foodlist3_3.jpg" alt=""></a>
+              <h2><a href="recipe-detail.html">밥한끼</a></h2>
+              <p>토마토소스와 불맛의 제육의 조화 토마토치즈제육덮밥</p>
               <div class="tag">
-                <a href="#">졸로구</a>
-                <a href="#">마카롱</a>
-                <a href="#">수박아이스크림</a>
+                <a href="#">서울</a>
+                <a href="#">용산구</a>
+                <a href="#">토마토치즈제육덮밥</a>
               </div>
             </div>
             
             <div class="box list recipes">
               <div class="by"><i class="fa fa-star" aria-hidden="true"></i> </div>
-              <a href="recipe-detail.html"><img src="images/foodlist_4.jpg" alt=""></a>
-              <h2><a href="recipe-detail.html">강초원조쭈꾸미</a></h2>
-              <p>미나리가 들어간 향긋한 쭈꾸미 볶음 맛집</p>
+              <a href="recipe-detail.html"><img src="images/foodlist3_4.jpg" alt=""></a>
+              <h2><a href="recipe-detail.html">진도리닭도리탕 </a></h2>
+              <p>맛있게 매콤한 국물과 밀떡, 넓쩍당면 사리의 콤보</p>
               <div class="tag">
-                <a href="#">Milk</a>
-                <a href="#">Lemon</a>
-                <a href="#">Sayur</a>
+                <a href="#">서울</a>
+                <a href="#">양천구</a>
+                <a href="#">닭도리탕</a>
               </div>
             </div>
             
             <div class="box list recipes">
               <div class="by"><i class="fa fa-star" aria-hidden="true"></i> </div>
-              <a href="recipe-detail.html"><img src="images/foodlist_5.jpg" alt=""></a>
-              <h2><a href="recipe-detail.html">초량돼지</a></h2>
-              <p>칼집난 고기로 기름기 빠진 구이 전문점</p>
+              <a href="recipe-detail.html"><img src="images/foodlist3_5.jpg" alt=""></a>
+              <h2><a href="recipe-detail.html">영천영화 청담점 (이영자 육회비빔밥)</a></h2>
+              <p>이영자 육회비빔밥으로 유명한 고소한 육회 맛집</p>
               <div class="tag">
-                <a href="#">강남구</a>
-                <a href="#">두껍데기살</a>
-                <a href="#">오겹살</a>
+                <a href="#">서울</a>
+                <a href="#">육회비빔밥</a>
+                <a href="#">이영자</a>
               </div>
             </div>
 
