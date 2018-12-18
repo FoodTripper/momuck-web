@@ -26,3 +26,8 @@
 /.nb-gradle/
 
 logs
+.DS_Store
+application.properties
+src/main/webapp/css
+src/main/webapp/images
+src/main/webapp/js
