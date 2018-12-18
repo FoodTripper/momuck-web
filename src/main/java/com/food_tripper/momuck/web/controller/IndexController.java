@@ -14,50 +14,14 @@ import java.util.List;
 
 @Controller
 public class IndexController {
-    @Autowired
-    private RestaurantService restaurantService;
 
     @Autowired
     private RestaurantRepository restaurantRepository;
 
     @RequestMapping(value= {"/", "/home"}, method= {RequestMethod.GET, RequestMethod.POST} )
     public String home(Model model) {
-        Iterable<Restaurant> rest = restaurantRepository.findByRestaurantName("콩두");
-        for (Restaurant r : rest) {
-            System.out.println(r);
-        }
-
-
-        Restaurant dummyRestaurant = restaurantService.findById(1L);
-
-        if (dummyRestaurant == null) {
-            dummyRestaurant = new Restaurant("모먹상점", "일식", 3.5f, "공릉동", null, null);
-            dummyRestaurant.setIdx("0");
-
-            restaurantService.save(dummyRestaurant);
-        }
-
-        model.addAttribute("restaurant", dummyRestaurant);
-
         return "/home";
     }
-    
-    @GetMapping("/home2")
-    public String home2(Model model) {
-    	Restaurant dummyRestaurant = restaurantService.findById(1L);
-
-        if (dummyRestaurant == null) {
-            dummyRestaurant = new Restaurant("모먹상점", "일식", 3.5f, "공릉동", null, null);
-            dummyRestaurant.setIdx("0");
-
-            restaurantService.save(dummyRestaurant);
-        }
-
-        model.addAttribute("restaurant", dummyRestaurant);
-
-        return "home2";
-    }
-
     
     @GetMapping("/index")
     public String index(Model model) {
@@ -82,11 +46,28 @@ public class IndexController {
    
         return "thema";
     }
-    
-    @GetMapping("/recipe-detail")
-    public String recipeDetail(Model model) {
+    @GetMapping("/thema2")
+    public String themaPage2(Model model) {
    
-        return "recipe-detail";
+        return "thema2";
+    }
+    
+    @GetMapping("/rst-detail")
+    public String restaurantDetail(Model model) {
+   
+        return "rst-detail";
+    }
+    
+    @GetMapping("/rst-detail1")
+    public String restaurantDetail1(Model model) {
+   
+        return "rst-detail1";
+    }
+    
+    @GetMapping("/my-food-list")
+    public String myFoodList(Model model) {
+   
+        return "my-food-list";
     }
     
     @GetMapping("/food-list")
@@ -94,11 +75,32 @@ public class IndexController {
    
         return "food-list";
     }
+    @GetMapping("/food-list2")
+    public String foodList2(Model model) {
+   
+        return "food-list2";
+    }
+    @GetMapping("/food-list3")
+    public String foodList3(Model model) {
+   
+        return "food-list3";
+    }
+    @GetMapping("/food-list4")
+    public String foodList4(Model model) {
+   
+        return "food-list4";
+    }
     
     @GetMapping("/join")
     public String joinPage(Model model) {
    
         return "join";
+    }
+    
+    @GetMapping("/mypage")
+    public String myPage(Model model) {
+   
+        return "mypage";
     }
  
    
