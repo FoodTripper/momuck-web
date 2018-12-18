@@ -1,38 +1,40 @@
 package com.food_tripper.momuck.web.domain;
 
 import com.couchbase.client.java.repository.annotation.Field;
-import com.couchbase.client.java.repository.annotation.Id;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.couchbase.core.mapping.Document;
 import org.springframework.data.couchbase.core.mapping.id.GeneratedValue;
 import org.springframework.data.couchbase.core.mapping.id.GenerationStrategy;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
-
 @Document
-public class Restaurant {
+public class User {
 
     @Id
-    @GeneratedValue(strategy=GenerationStrategy.USE_ATTRIBUTES)
+    @GeneratedValue(strategy = GenerationStrategy.USE_ATTRIBUTES)
     @Field
     @Getter @Setter
-    private String idx;
+    private long idx;
 
     @Field
     @Getter @Setter
-    private String restaurantName;
+    private String email;
 
     @Field
     @Getter @Setter
-    private String category;
+    private String password;
 
     @Field
     @Getter @Setter
-    private float averageScore;
+    private String nickname;
+
+    @Field
+    @Getter @Setter
+    private Gender gender;
 
     @Field
     @Getter @Setter
@@ -40,31 +42,18 @@ public class Restaurant {
 
     @Field
     @Getter @Setter
-    private List<Menu> menus;
-
-    @Field
-    @Getter @Setter
     private List<Review> reviews;
 
-
-    public Restaurant() {
+    public User() {
     }
 
-    public Restaurant(String restaurantName, String category, float averageScore, String address, List<Menu> menus, List<Review> reviews) {
-        this.restaurantName = restaurantName;
-        this.category = category;
-        this.averageScore = averageScore;
+    public User(String email, String password, String nickname, Gender gender, String address, List<Review> reviews) {
+        this.email = email;
+        this.password = password;
+        this.nickname = nickname;
+        this.gender = gender;
         this.address = address;
-        this.menus = menus;
         this.reviews = reviews;
-    }
-
-    public void addMenu(Menu menu) {
-        if (menus == null) {
-            menus = new LinkedList();
-        }
-
-        menus.add(menu);
     }
 
     public void addReview(Review review) {
