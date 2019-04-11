@@ -18,7 +18,7 @@ public class User {
     @GeneratedValue(strategy = GenerationStrategy.USE_ATTRIBUTES)
     @Field
     @Getter @Setter
-    private long idx;
+    private String idx;
 
     @Field
     @Getter @Setter
@@ -42,12 +42,12 @@ public class User {
 
     @Field
     @Getter @Setter
-    private List<Review> reviews;
+    private List<String> reviews;
 
     public User() {
     }
 
-    public User(String email, String password, String nickname, Gender gender, String address, List<Review> reviews) {
+    public User(String email, String password, String nickname, Gender gender, String address, List<String> reviews) {
         this.email = email;
         this.password = password;
         this.nickname = nickname;
@@ -56,7 +56,7 @@ public class User {
         this.reviews = reviews;
     }
 
-    public void addReview(Review review) {
+    public void addReview(String review) {
         if (reviews == null) {
             reviews = new ArrayList();
         }

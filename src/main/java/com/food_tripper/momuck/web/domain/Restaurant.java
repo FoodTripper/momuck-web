@@ -44,13 +44,13 @@ public class Restaurant {
 
     @Field
     @Getter @Setter
-    private List<Review> reviews;
+    private List<String> reviews;
 
 
     public Restaurant() {
     }
 
-    public Restaurant(String restaurantName, String category, float averageScore, String address, List<Menu> menus, List<Review> reviews) {
+    public Restaurant(String restaurantName, String category, float averageScore, String address, List<Menu> menus, List<String> reviews) {
         this.restaurantName = restaurantName;
         this.category = category;
         this.averageScore = averageScore;
@@ -67,7 +67,7 @@ public class Restaurant {
         menus.add(menu);
     }
 
-    public void addReview(Review review) {
+    public void addReview(String review) {
         if (reviews == null) {
             reviews = new ArrayList();
         }

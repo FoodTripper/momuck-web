@@ -15,24 +15,29 @@ public class Review {
     @GeneratedValue(strategy = GenerationStrategy.USE_ATTRIBUTES)
     @Field
     @Getter @Setter
-    private long idx;
+    private String idx;
 
     @Field
     @Getter @Setter
-    private long userId;
+    private String userId;
 
     @Field
     @Getter @Setter
-    private float rate;
+    private String restaurantId;
 
     @Field
     @Getter @Setter
-    private String text;
+    private String rate;
+
+    @Field
+    @Getter @Setter
+    private String content;
 
 
-    public Review(long userId, float rate, String text) {
+    public Review(String userId, String rate, String content, String restaurantId) {
         this.userId = userId;
         this.rate = rate;
-        this.text = text;
+        this.content = content;
+        this.restaurantId = restaurantId;
     }
 }
